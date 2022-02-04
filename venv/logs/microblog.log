@@ -128,3 +128,4 @@ Traceback (most recent call last):
     return self.field_class(*self.args, **kw)
 TypeError: __init__() got an unexpected keyword argument 'validator'
 2022-02-04 21:19:53,988 INFO: Microblog startup [in /home/gauti/microblog/venv/app/__init__.py:47]
+2022-02-04 23:04:17,843 INFO: Microblog startup [in /home/gauti/microblog/venv/app/__init__.py:49]

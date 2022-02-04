@@ -50,3 +50,81 @@ Traceback (most recent call last):
     rv = type(rv)
 TypeError: 'str' object is not callable
 2022-02-04 16:27:35,752 INFO: Microblog startup [in /home/gauti/microblog/venv/app/__init__.py:45]
+2022-02-04 17:02:20,151 INFO: Microblog startup [in /home/gauti/microblog/venv/app/__init__.py:47]
+2022-02-04 21:17:04,963 INFO: Microblog startup [in /home/gauti/microblog/venv/app/__init__.py:47]
+2022-02-04 21:17:25,609 ERROR: Exception on /reset_password_request [GET] [in /home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/gauti/microblog/venv/app/routes.py", line 164, in reset_password_request
+    form = ResetPasswordRequestForm()
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask_wtf/form.py", line 73, in __init__
+    super().__init__(formdata=formdata, **kwargs)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 280, in __init__
+    super().__init__(self._unbound_fields, meta=meta_obj, prefix=prefix)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 48, in __init__
+    field = meta.bind_field(self, unbound_field, options)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/meta.py", line 28, in bind_field
+    return unbound_field.bind(form=form, **options)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/fields/core.py", line 395, in bind
+    return self.field_class(*self.args, **kw)
+TypeError: __init__() got an unexpected keyword argument 'validator'
+2022-02-04 21:18:18,340 ERROR: Exception on /reset_password_request [GET] [in /home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/gauti/microblog/venv/app/routes.py", line 164, in reset_password_request
+    form = ResetPasswordRequestForm()
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask_wtf/form.py", line 73, in __init__
+    super().__init__(formdata=formdata, **kwargs)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 280, in __init__
+    super().__init__(self._unbound_fields, meta=meta_obj, prefix=prefix)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 48, in __init__
+    field = meta.bind_field(self, unbound_field, options)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/meta.py", line 28, in bind_field
+    return unbound_field.bind(form=form, **options)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/fields/core.py", line 395, in bind
+    return self.field_class(*self.args, **kw)
+TypeError: __init__() got an unexpected keyword argument 'validator'
+2022-02-04 21:19:49,051 ERROR: Exception on /reset_password_request [GET] [in /home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/gauti/microblog/venv/app/routes.py", line 164, in reset_password_request
+    form = ResetPasswordRequestForm()
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask_wtf/form.py", line 73, in __init__
+    super().__init__(formdata=formdata, **kwargs)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 280, in __init__
+    super().__init__(self._unbound_fields, meta=meta_obj, prefix=prefix)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 48, in __init__
+    field = meta.bind_field(self, unbound_field, options)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/meta.py", line 28, in bind_field
+    return unbound_field.bind(form=form, **options)
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/wtforms/fields/core.py", line 395, in bind
+    return self.field_class(*self.args, **kw)
+TypeError: __init__() got an unexpected keyword argument 'validator'
+2022-02-04 21:19:53,988 INFO: Microblog startup [in /home/gauti/microblog/venv/app/__init__.py:47]

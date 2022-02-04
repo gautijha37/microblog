@@ -1,8 +1,4 @@
-2022-02-01 17:48:33,816 INFO: Microblog startup [in /home/gauti/microblog/venv/app/__init__.py:45]
-2022-02-01 17:48:46,976 INFO: Microblog startup [in /home/gauti/microblog/venv/app/__init__.py:45]
-2022-02-04 13:29:04,259 INFO: Microblog startup [in /home/gauti/microblog/venv/app/__init__.py:45]
-2022-02-04 14:07:15,357 INFO: Microblog startup [in /home/gauti/microblog/venv/app/__init__.py:45]
-2022-02-04 14:08:06,779 ERROR: Exception on /user/Ramesh Prasad [GET] [in /home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py:1457]
+2022-02-04 16:24:04,034 ERROR: Exception on /index [GET] [in /home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py:1457]
 Traceback (most recent call last):
   File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
     response = self.full_dispatch_request()
@@ -14,10 +10,12 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
   File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "/home/gauti/microblog/venv/app/routes.py", line 76, in user
-    form = EmptyForm()
-NameError: name 'EmptyForm' is not defined
-2022-02-04 14:08:13,020 ERROR: Exception on /user/Ramesh Prasad [GET] [in /home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py:1457]
+  File "/home/gauti/microblog/venv/app/routes.py", line 21, in index
+    page = request.args.get('page', 1, type = 'int')
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/werkzeug/datastructures.py", line 267, in get
+    rv = type(rv)
+TypeError: 'str' object is not callable
+2022-02-04 16:24:09,058 ERROR: Exception on /index [GET] [in /home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py:1457]
 Traceback (most recent call last):
   File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
     response = self.full_dispatch_request()
@@ -29,10 +27,12 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
   File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "/home/gauti/microblog/venv/app/routes.py", line 76, in user
-    form = EmptyForm()
-NameError: name 'EmptyForm' is not defined
-2022-02-04 14:08:13,754 ERROR: Exception on /user/Ramesh Prasad [GET] [in /home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py:1457]
+  File "/home/gauti/microblog/venv/app/routes.py", line 21, in index
+    page = request.args.get('page', 1, type = 'int')
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/werkzeug/datastructures.py", line 267, in get
+    rv = type(rv)
+TypeError: 'str' object is not callable
+2022-02-04 16:26:12,423 ERROR: Exception on /index [GET] [in /home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py:1457]
 Traceback (most recent call last):
   File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
     response = self.full_dispatch_request()
@@ -44,52 +44,9 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
   File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "/home/gauti/microblog/venv/app/routes.py", line 76, in user
-    form = EmptyForm()
-NameError: name 'EmptyForm' is not defined
-2022-02-04 14:08:15,006 ERROR: Exception on /user/Ramesh Prasad [GET] [in /home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py:1457]
-Traceback (most recent call last):
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "/home/gauti/microblog/venv/app/routes.py", line 76, in user
-    form = EmptyForm()
-NameError: name 'EmptyForm' is not defined
-2022-02-04 14:08:19,578 ERROR: Exception on /user/Ramesh Prasad [GET] [in /home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py:1457]
-Traceback (most recent call last):
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "/home/gauti/microblog/venv/app/routes.py", line 76, in user
-    form = EmptyForm()
-NameError: name 'EmptyForm' is not defined
-2022-02-04 14:09:40,179 ERROR: Exception on /user/Ramesh Prasad [GET] [in /home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py:1457]
-Traceback (most recent call last):
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "/home/gauti/microblog/venv/app/routes.py", line 76, in user
-    form = EmptyForm()
-NameError: name 'EmptyForm' is not defined
-2022-02-04 14:09:47,109 INFO: Microblog startup [in /home/gauti/microblog/venv/app/__init__.py:45]
+  File "/home/gauti/microblog/venv/app/routes.py", line 21, in index
+    page = request.args.get('page', 1, type = 'int')
+  File "/home/gauti/microblog/venv/lib/python3.8/site-packages/werkzeug/datastructures.py", line 267, in get
+    rv = type(rv)
+TypeError: 'str' object is not callable
+2022-02-04 16:27:35,752 INFO: Microblog startup [in /home/gauti/microblog/venv/app/__init__.py:45]
